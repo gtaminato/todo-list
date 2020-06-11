@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Button from '../button';
+
 import './styles.scss';
 
 const SplashScreen = ({ onStart }) => (
@@ -11,12 +13,7 @@ const SplashScreen = ({ onStart }) => (
         Keep all your tasks in a safe place and regain clarity to your head
       </p>
 
-      <div
-        className="SplashScreen__button pure-button pure-button-primary"
-        onClick={() => onStart()}
-      >
-        Get Started
-      </div>
+      <Button onClick={onStart} text="Get Started" className="SplashScreen__button" />
     </div>
   </div>
 );

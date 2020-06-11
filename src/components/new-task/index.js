@@ -7,6 +7,8 @@ const NewTask = ({ onAdd }) => {
   const handleKeyDown = event => {
     if (event.key === 'Enter') {
       onAdd(event.target.value);
+
+      event.target.value = '';
     }
   };
 
