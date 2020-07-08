@@ -1,0 +1,14 @@
+.NewTask {
+  input {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 32px;
+    outline: none;
+    text-align: center;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+}

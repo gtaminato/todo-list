@@ -1,0 +1,21 @@
+.Task {
+  align-items: center;
+  display: flex;
+
+  &__content {
+    overflow-wrap: anywhere;
+    margin-right: 16px;
+    cursor: pointer;
+    font-size: 24px;
+
+    &--done {
+      text-decoration: line-through;
+    }
+  }
+
+  &__delete {
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+  }
+}
